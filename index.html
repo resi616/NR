@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="assets/logo.png" alt="logo" />
+      </div>
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#editions">Editions</a>
+        <a href="#trailer">Trailer</a>
+        <a href="#">Gallery</a>
+        <a href="#">News</a>
+      </div>
+    </nav>
+    <div class="hero"></div>
+    <div class="overview-section" id="overview">
+      <img src="assets/gmbr1.png" class="gambar-1" alt="" />
+      <h2>
+        <span>Elden Ring</span>
+        <span>Nightreign</span>
+      </h2>
+      <div class="game-info">
+        <div class="info-header">
+          <div>Release Date</div>
+          <div>Developer</div>
+          <div>Genres</div>
+          <div>Supports</div>
+        </div>
+        <div class="info-values">
+          <div>Available Now</div>
+          <div>FromSoftware Inc.</div>
+          <div>Co-Op Action Survival</div>
+          <div>Single-player / Multiplayer</div>
+        </div>
+      </div>
+      <div class="platforms-section">
+        <h4>Platforms</h4>
+        <div class="platforms">
+          <div><img src="assets/ps_icon.png" alt="PS5" />PlayStation 5</div>
+          <div><img src="assets/ps_icon.png" alt="PS4" />PlayStation 4</div>
+          <div>
+            <img src="assets/xbox_icons.png" alt="XSX" />Xbox Series X|S
+          </div>
+          <div><img src="assets/xbox_icons.png" alt="XONE" />Xbox One</div>
+          <div><img src="assets/windows_icons.png" alt="PC" />PC</div>
+        </div>
+      </div>
+      <img src="assets/gmbr2.png" class="gambar-2" alt="" />
+      <div class="explanation">
+        <h1>As Night Falls, We Rise.</h1>
+        <p>
+          NIGHTREIGN is a standalone adventure within the ELDEN RING universe,
+          crafted to bring a new gaming experience.
+        </p>
+        <p>
+          <span>RISE TOGETHER</span>
+          Join forces with other players to take on the creeping night and the
+          dangers within featuring 3-player co-op.
+        </p>
+        <p>
+          <span>BECOME A HERO</span>
+          Take command of uniquely skilled heroes, each possessing their own
+          abilities and distinct flair. While individually powerful, their
+          skills grow even more formidable when united as a team.
+        </p>
+        <p>
+          <span>TAKE ON THE NIGHT</span>
+          Overcome a relentless environmental threat that sweeps through a land
+          that changes between each game session and defeat the magnificent boss
+          of that night!
+        </p>
+      </div>
+    </div>
+    <div class="edition-section" id="editions">
+      <div class="step-nav">
+        <span class="step-link" id="step1">1. CHOOSE YOUR EDITION</span> ›
+        <span class="step-link" id="step2">2. CHOOSE YOUR PLATFORM</span>›
+        <span class="step-link" id="step2">3. CHOOSE YOUR STORE</span>
+      </div>
+      <div class="step-edition">
+        <h2>1. CHOOSE YOUR EDITION</h2>
+        <div class="card-container">
+          <div class="card" data-edition="Standard Edition">
+            <img src="assets/standard.webp" alt="" />
+            <h3>ELDEN RING NIGHTREIGN <span>standard edition</span></h3>
+            <button class="select-edition">Select</button>
+            <hr />
+            <p>ELDEN RING Nightreign (base game)</p>
+          </div>
+          <div class="card" data-edition="Deluxe Edition">
+            <img src="assets/deluxe.webp" alt="" />
+            <h3>ELDEN RING NIGHTREIGN <span>Deluxe Edition</span></h3>
+            <button class="select-edition">Select</button>
+            <hr />
+            <p>ELDEN RING Nightreign (base game)</p>
+            <hr />
+            <p>Digital Artbook + Mini Soundtrack</p>
+            <hr />
+            <p>Additional DLC: Additional playable characters and bosses</p>
+          </div>
+          <div class="card" data-edition="Collector's Edition">
+            <img src="assets/collector.webp" alt="" />
+            <h3>ELDEN RING NIGHTREIGN <span>Collector Edition</span></h3>
+            <button class="select-edition">Select</button>
+            <hr />
+            <p>ELDEN RING Nightreign (base game)</p>
+            <hr />
+            <p>Additional DLC: Additional playable characters and bosses</p>
+            <hr />
+            <p>Statue of Wylder</p>
+            <hr />
+            <p>Steelbook®</p>
+            <hr />
+            <p>Nightfarer Cards</p>
+            <hr />
+            <p>Exclusive Hardcover Artbook</p>
+            <hr />
+            <p>Digital Soundtrack</p>
+            <hr />
+            <p>Collector's Box</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="step-platform" style="display: none">
+        <p id="selected-edition"></p>
+        <h2>2. CHOOSE YOUR PLATFORM</h2>
+        <div class="platform-container">
+          <button>PlayStation 5</button>
+          <button>PlayStation 4</button>
+          <button>Xbox Series X|S</button>
+          <button>Xbox One</button>
+          <button>Steam</button>
+        </div>
+      </div>
+      <div class="step-store" style="display: none">
+        <p id="selected-platform"></p>
+        <h2>3. CHOOSE YOUR STORE</h2>
+        <p id="selected-platform"></p>
+        <div class="store-container" id="store-buttons">
+          <!-- store buttons will be injected here by JS -->
+        </div>
+      </div>
+    </div>
+
+    <div class="trailers-section" id="trailer">
+      <h1>Official trailer</h1>
+
+      <div class="video-container" id="videoContainer">
+        <!-- Video Cover -->
+        <div class="video-cover" id="videoCover"></div>
+
+        <!-- Play Button -->
+        <div class="play-button" id="playButton"></div>
+
+        <!-- YouTube Embed -->
+        <div class="youtube-embed" id="youtubeEmbed">
+          <iframe
+            src="https://www.youtube.com/embed/Ot6j_qqYQaM?si=jhIgGZLU17hgGVrc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
+
+        <!-- Close Button -->
+        <div class="close-button" id="closeButton">×</div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

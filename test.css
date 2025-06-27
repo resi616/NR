@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #131322;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 64px;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-links {
+  font-family: "cinzel", serif;
+  display: flex;
+  gap: 32px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-links a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url(assets/nightreign.png);
+  background-size: cover;
+  width: 100%;
+  height: 810px;
+  background-repeat: no-repeat;
+  margin-top: 102px;
+}
+
+.overview-section {
+  background-image: url(assets/bgoverview.jpeg);
+  background-size: cover;
+  margin-top: 0;
+  height: 1300px;
+  width: 100%;
+}
+
+.gambar-1 {
+  width: 600px;
+  height: auto;
+  float: right;
+  margin-right: 40px;
+  margin-top: 180px;
+}
+
+.overview-section h2 {
+  font-family: "cinzel", serif;
+  background: linear-gradient(to bottom, #e8e8e8, #2c5aa0);
+  color: transparent;
+  -webkit-background-clip: text;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 48px;
+  padding-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 1000px;
+  margin-bottom: 40px;
+  color: white;
+  font-family: "Cinzel", serif;
+  padding-right: 40px;
+  padding-left: 40px;
+  text-align: left;
+}
+
+.info-header,
+.info-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  gap: 20px;
+}
+
+.info-header div {
+  text-align: left;
+  color: #4a90e2;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info-values div {
+  text-align: left;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.platforms-section {
+  padding: 0 40px;
+  margin-top: 20px;
+  font-family: "Cinzel", serif;
+  color: white;
+}
+
+.platforms-section h4 {
+  color: #4a90e2;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.platforms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+}
+
+.platforms div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.platforms img {
+  width: 24px;
+  height: 24px;
+}
+
+.gambar-2 {
+  width: 600px;
+  height: auto;
+  float: left;
+  margin-left: 40px;
+  margin-top: 180px;
+}
+
+.explanation {
+  float: right;
+  width: calc(100% - 680px); /* Lebar tersisa setelah gambar + margin */
+  margin-right: 20px;
+  margin-top: 80px; /* Sesuaikan dengan posisi gambar */
+}
+
+.explanation h1 {
+  font-size: 48px;
+  font-family: "cinzel", serif;
+  background: linear-gradient(to bottom, #e8e8e8, #2c5aa0);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text; /* Tambahkan untuk browser lain */
+  margin: 0;
+}
+
+.explanation p {
+  margin-top: 20px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-family: "cinzel", serif;
+  color: white;
+}
+
+.explanation span {
+  display: block;
+  padding-right: 40px;
+  font-size: 18px;
+  font-family: "cinzel", serif;
+  color: white;
+}
+
+/* edition css */
+
+.edition-section {
+  background-image: url(assets/editions\ background.jpg);
+  background-size: cover;
+  margin-top: 0;
+  height: 1500px;
+  width: 100%;
+}
+
+.card-container,
+.platform-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 250px;
+  height: 900px;
+  border: 1px solid #444;
+  margin-top: 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h3 {
+  margin-top: 18px;
+}
+
+.card h3 span {
+  display: block;
+  text-transform: uppercase;
+  font-family: "cinzel", serif;
+  padding-top: 12px;
+  color: #0077cc;
+}
+
+.card hr {
+  margin-top: 20px;
+}
+
+.card p {
+  padding-top: 6px;
+  text-align: left;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+button {
+  margin-top: 30px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 1px solid rgba(53, 81, 113, 0.4);
+  text-shadow: 0px 0px 6px #112a42, 0px 0px 6px #112a42;
+  height: 40px;
+  font-family: "cinzel", serif;
+  padding: 10px 20px;
+  background-image: url(assets/buttonbg.jpg);
+  background-size: cover;
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.step-edition h2 {
+  font-size: 48px;
+  font-family: "cinzel", serif;
+  background: linear-gradient(to bottom, #e8e8e8, #2c5aa0);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+}
+.step-nav {
+  font-size: 32px;
+  font-family: "cinzel", serif;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+  color: white;
+  padding-top: 120px;
+}
+
+.step-link {
+  position: relative;
+  cursor: pointer;
+  color: #0ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* trailer */
+.trailers-section {
+  background-image: url(assets/trailerbackground.jpg);
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.video-cover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-image: url("assets/officialtrailerthumbnail.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+
+.video-cover:hover {
+  opacity: 0.9;
+  box-shadow: 0 0 20px rgba(4, 18, 95, 0.3);
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.play-button:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%) scale(1.1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+.play-button::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid white;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  margin-left: 5px;
+}
+
+.youtube-embed {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 760px;
+  height: 415px;
+  display: none;
+  z-index: 20;
+}
+.youtube-embed iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.close-button {
+  position: absolute;
+  top: 120px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid white;
+  border-radius: 50%;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 30;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
+
+.video-container.playing .video-cover,
+.video-container.playing .play-button {
+  display: none;
+}
+
+.video-container.playing .youtube-embed,
+.video-container.playing .close-button {
+  display: flex;
+}
+
+.video-container.playing .youtube-embed {
+  display: block;
+}
