@@ -19,8 +19,8 @@
         <a href="#overview">Overview</a>
         <a href="#editions">Editions</a>
         <a href="#trailer">Trailer</a>
-        <a href="#">Gallery</a>
-        <a href="#">News</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#news">News</a>
       </div>
     </nav>
     <div class="hero"></div>
@@ -148,9 +148,7 @@
         <p id="selected-platform"></p>
         <h2>3. CHOOSE YOUR STORE</h2>
         <p id="selected-platform"></p>
-        <div class="store-container" id="store-buttons">
-          <!-- store buttons will be injected here by JS -->
-        </div>
+        <div class="store-container" id="store-buttons"></div>
       </div>
     </div>
 
@@ -181,6 +179,219 @@
       </div>
     </div>
 
+    <div class="gallery-section" id="gallery">
+      <div class="gallery-grid">
+        <!-- Video Card 1 -->
+        <div class="video-card" onclick="openModal('modal1')">
+          <div
+            class="video-thumbnail"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('assets/ironeye\ character\ trailer.jpg');
+            "
+          >
+            <div class="game-logo">ELDEN RING</div>
+            <div class="game-title">NIGHTREIGN</div>
+            <div class="video-overlay">
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-title">IRONEYE CHARACTER TRAILER</div>
+          </div>
+        </div>
+
+        <!-- Video Card 2 -->
+        <div class="video-card" onclick="openModal('modal2')">
+          <div
+            class="video-thumbnail"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('assets/preorder\ trailer.webp');
+            "
+          >
+            <div class="game-logo">ELDEN RING</div>
+            <div class="game-title">NIGHTREIGN</div>
+            <div class="video-overlay">
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-title">OFFICIAL PRE-ORDER TRAILER</div>
+          </div>
+        </div>
+
+        <!-- Video Card 3 -->
+        <div class="video-card" onclick="openModal('modal3')">
+          <div
+            class="video-thumbnail"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('assets/nightreign.png');
+            "
+          >
+            <div class="game-logo">ELDEN RING</div>
+            <div class="game-title">NIGHTREIGN</div>
+            <div class="video-overlay">
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-title">REVEAL GAMEPLAY TRAILER</div>
+          </div>
+        </div>
+
+        <!-- Video Card 4 - Special Valentine -->
+        <div class="video-card special-card" onclick="openModal('modal4')">
+          <div
+            class="video-thumbnail"
+            style="
+              background-image: linear-gradient(
+                  rgba(0, 0, 0, 0.3),
+                  rgba(0, 0, 0, 0.5)
+                ),
+                url('assets/happyvalentines');
+            "
+          >
+            <div class="game-logo">ELDEN RING</div>
+            <div class="game-title">NIGHTREIGN</div>
+            <div class="video-overlay">
+              <div class="play-button"></div>
+            </div>
+          </div>
+          <div class="video-info">
+            <div class="video-title">HAPPY VALENTINE'S DAY</div>
+          </div>
+        </div>
+
+        <!-- Image Card 5 - No video, just image -->
+        <div class="video-card image-only">
+          <div
+            class="video-thumbnail"
+            style="background-image: url('assets/recluisiv.webp')"
+          >
+            <!-- No overlay or play button for image-only cards -->
+          </div>
+          <div class="video-info">
+            <div class="video-title">EPIC DRAGON FLIGHT</div>
+            <div class="video-subtitle">GAMEPLAY SHOWCASE</div>
+          </div>
+        </div>
+
+        <!-- Image Card 6 - No video, just image -->
+        <div class="video-card image-only">
+          <div
+            class="video-thumbnail"
+            style="background-image: url('assets/fulghor.webp')"
+          >
+            <!-- No overlay or play button for image-only cards -->
+          </div>
+          <div class="video-info">
+            <div class="video-title">MYSTIC BATTLES</div>
+            <div class="video-subtitle">COMBAT PREVIEW</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal untuk video -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal1')">&times;</span>
+        <div class="modal-video">
+          <p>🎮 IRONEYE CHARACTER TRAILER<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal2')">&times;</span>
+        <div class="modal-video">
+          <p>🎮 OFFICIAL PRE-ORDER TRAILER<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal3')">&times;</span>
+        <div class="modal-video">
+          <p>🎮 REVEAL GAMEPLAY TRAILER<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal4')">&times;</span>
+        <div class="modal-video">
+          <p>💝 HAPPY VALENTINE'S DAY<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal5')">&times;</span>
+        <div class="modal-video">
+          <p>🐉 EPIC DRAGON FLIGHT<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('modal6')">&times;</span>
+        <div class="modal-video">
+          <p>⚔️ MYSTIC BATTLES<br />Video akan dimuat di sini</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="news-section" id="news">
+      <h2 class="news-heading">latest news</h2>
+      <div class="news-cards">
+        <div class="news-card-container">
+          <div class="news-card">
+            <div class="news-card-image"></div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Judul Berita Pertama</h3>
+            <p class="news-card-date">27 Juni 2025</p>
+          </div>
+        </div>
+
+        <div class="news-card-container">
+          <div class="news-card">
+            <div class="news-card-image"></div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Judul Berita Kedua</h3>
+            <p class="news-card-date">26 Juni 2025</p>
+          </div>
+        </div>
+
+        <div class="news-card-container">
+          <div class="news-card">
+            <div class="news-card-image"></div>
+          </div>
+          <div class="news-card-content">
+            <h3 class="news-card-title">Judul Berita Ketiga</h3>
+            <p class="news-card-date">25 Juni 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

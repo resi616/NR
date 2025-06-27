@@ -167,3 +167,45 @@ document.addEventListener("keydown", (e) => {
     closeVideo();
   }
 });
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+  document.body.style.overflow = "hidden";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+// Close modal when clicking outside
+window.onclick = function (event) {
+  if (event.target.classList.contains("modal")) {
+    event.target.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+};
+
+// Close modal with Escape key
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape") {
+    const modals = document.querySelectorAll(".modal");
+    modals.forEach((modal) => {
+      if (modal.style.display === "block") {
+        modal.style.display = "none";
+        document.body.style.overflow = "auto";
+      }
+    });
+  }
+});
+
+// Add hover sound effect (optional)
+document.querySelectorAll(".video-card").forEach((card) => {
+  card.addEventListener("mouseenter", function () {
+    // You can add sound effect here if needed
+    this.style.transform = "translateY(-8px) scale(1.02)";
+  });
+
+  card.addEventListener("mouseleave", function () {
+    this.style.transform = "translateY(0) scale(1)";
+  });
+});
